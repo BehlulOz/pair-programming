@@ -5,20 +5,30 @@ import {BattleCardOne} from '../../components/BattleCardOne/BattleCardOne'
 import {BattleCardTwo} from '../../components/BattleCardTwo/BattleCardTwo'
 import { useEffect, useState } from "react";
 import {WinnerPage} from '../WinnerPage/WinnerPage'
+import punchSound from  '../../assets/mixkit-body-punch-quick-hit-2153.wav'
 
 export const BattlePage = ({cardImageOne, cardImageTwo}) => {
   const [health1, setHealth1] = useState(100);
   const [winner, setWinner] = useState('');
+
+  const playSound = () => {
+    const audio = new Audio(punchSound)
+    audio.play();
+  }
+
   const applyDamage1 = () => {
     const randomDamage = Math.floor(Math.random() * 25) + 1;
     setHealth1(health1 - randomDamage);
+    playSound();
+    
   }
 
   const [health2, setHealth2] = useState(100);
   const applyDamage2 = () => {
     const randomDamage = Math.floor(Math.random() * 25) + 1;
     setHealth2(health2 - randomDamage);
-  
+    playSound();
+    
   }
 
   useEffect (() => {
