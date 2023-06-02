@@ -10,4 +10,6 @@ export const Card__2 = ({cardImageTwo}) => {
     
     </>
   )
-}
+};
+
+export default Card__2;
