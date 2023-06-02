@@ -6,6 +6,7 @@ import {BattleCardTwo} from '../../components/BattleCardTwo/BattleCardTwo'
 import { useEffect, useState } from "react";
 import {WinnerPage} from '../WinnerPage/WinnerPage'
 import punchSound from  '../../assets/mixkit-body-punch-quick-hit-2153.wav'
+import backgroundSong from '../../assets/battle-of-the-dragons-8037.mp3'
 
 export const BattlePage = ({cardImageOne, cardImageTwo}) => {
   const [health1, setHealth1] = useState(100);
@@ -38,6 +39,13 @@ export const BattlePage = ({cardImageOne, cardImageTwo}) => {
       setWinner('Player 1');
     }
   },[health1, health2]);
+
+  useEffect(() => {
+    const audio = new Audio(backgroundSong);
+    audio.loop = true;
+    audio.play();
+
+  }, [])
 
 
   return (
