@@ -1,7 +1,6 @@
 import "./Card__1.scss";
 
 export const Card__1 = ({cardImageOne}) => {
-  
   return (
     <>
     <div className="card__image-container__1">

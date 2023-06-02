@@ -10,10 +10,13 @@ import { StartButton } from "../../components/StartButton/StartButton";
 import backupImage from "../../assets/backup-question-mark.png";
 import { Vs } from "../../components/Vs/Vs";
 
-export const HomePage = ( { cardImageOne, cardImageTwo, setCardImageOne, setCardImageTwo }) => {
-  
+export const HomePage = ({
+  cardImageOne,
+  cardImageTwo,
+  setCardImageOne,
+  setCardImageTwo,
+}) => {
   const [avatarType, setAvatarType] = useState(backupImage);
-
 
   return (
     <section className="home-page">

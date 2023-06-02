@@ -1,7 +1,8 @@
 .battle-card__image-container__1 {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
   height: 20rem;
   width: 50%;
 }
@@ -28,4 +29,29 @@
   margin-right: 5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.battle-card__attacks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 12rem;
+  background-color: #4caf50;
+  color: darkgreen;
+  font-family: "Reggae";
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 1vw;
+  cursor: pointer;
+}
+
+.battle-card__div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1px;
 }
