@@ -1,0 +1,25 @@
+.button1-container {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  width: 50vw;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 10vw;
+  background-color: #4caf50;
+  color: #fff;
+  font-family: "Reggae";
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 1vw;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}

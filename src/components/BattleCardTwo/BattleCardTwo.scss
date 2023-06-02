@@ -1,0 +1,29 @@
+.battle-card__image-container__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 20rem;
+  width: 40%;
+}
+.battle-card__image {
+  width: 12rem;
+  height: 13rem;
+  margin-right: 5rem;
+}
+
+.battle-card__health__2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 12rem;
+  background-color: #4caf50;
+  color: darkgreen;
+  font-family: "Reggae";
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 1vw;
+}

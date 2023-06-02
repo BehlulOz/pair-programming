@@ -1,0 +1,18 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.title {
+  font-family: "Reggae";
+  font-size: 5rem;
+  color:white;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 7rem;
+  margin: 0;
+  &__number {
+    color: darkred;
+    margin: 0;
+    font-size: 6rem;
+  }
+}

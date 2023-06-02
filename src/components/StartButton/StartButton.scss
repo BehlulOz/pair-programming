@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+}
+.button__start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 30vw;
+  background-color: #4caf50;
+  color: #fff;
+  font-family: "Reggae";
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin: 1vw;
+ 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
