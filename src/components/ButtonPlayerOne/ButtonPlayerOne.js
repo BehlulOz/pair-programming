@@ -8,9 +8,8 @@ export const ButtonPlayerOne = ({setAvatarType,avatarType, setCardImageOne }) =>
   
 
   const handleClick1 = () =>  {
-    setAvatarType(1);
     setClickNumberOne(Math.floor(Math.random() * 10));
-    fetch(roboApiOne)
+    fetch(`https://robohash.org/set_set1/${clickNumberOne}?size=500x500`)
     .then((response) => {
       setCardImageOne(response.url)
     })
@@ -19,9 +18,8 @@ export const ButtonPlayerOne = ({setAvatarType,avatarType, setCardImageOne }) =>
     });
   }
   const handleClick2 = () =>  {
-    setAvatarType(2);
     setClickNumberOne(Math.floor(Math.random() * 10));
-    fetch(roboApiOne)
+    fetch(`https://robohash.org/set_set2/${clickNumberOne}?size=500x500`)
     .then((response) => {
       setCardImageOne(response.url)
     })
@@ -30,9 +28,8 @@ export const ButtonPlayerOne = ({setAvatarType,avatarType, setCardImageOne }) =>
     });
   }
   const handleClick3 = () =>  {
-    setAvatarType(5);
     setClickNumberOne(Math.floor(Math.random() * 10));
-    fetch(roboApiOne)
+    fetch(`https://robohash.org/set_set5/${clickNumberOne}?size=500x500`)
     .then((response) => {
       setCardImageOne(response.url)
     })

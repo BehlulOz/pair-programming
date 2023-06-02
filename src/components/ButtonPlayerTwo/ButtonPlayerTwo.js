@@ -7,9 +7,8 @@ export const ButtonPlayerTwo = ({setAvatarType,avatarType,setCardImageTwo }) => 
   const roboApiTwo = `https://robohash.org/set_set${avatarType}/${clickNumberTwo}?size=500x500`;
   
   const handleClick1 = () =>  {
-    setAvatarType(1);
     setClickNumberTwo(Math.floor(Math.random() * 10));
-    fetch(roboApiTwo)
+    fetch(`https://robohash.org/set_set1/${clickNumberTwo}?size=500x500`)
       .then((response) => {
           setCardImageTwo(response.url)
       })
@@ -18,9 +17,8 @@ export const ButtonPlayerTwo = ({setAvatarType,avatarType,setCardImageTwo }) => 
       });
   }
   const handleClick2 = () =>  {
-    setAvatarType(2);
     setClickNumberTwo(Math.floor(Math.random() * 10));
-    fetch(roboApiTwo)
+    fetch(`https://robohash.org/set_set2/${clickNumberTwo}?size=500x500`)
       .then((response) => {
           setCardImageTwo(response.url)
       })
@@ -29,9 +27,8 @@ export const ButtonPlayerTwo = ({setAvatarType,avatarType,setCardImageTwo }) => 
       });
   }
   const handleClick3 = () =>  {
-    setAvatarType(5);
     setClickNumberTwo(Math.floor(Math.random() * 10));
-    fetch(roboApiTwo)
+    fetch(`https://robohash.org/set_set5/${clickNumberTwo}?size=500x500`)
       .then((response) => {
           setCardImageTwo(response.url)
       })
