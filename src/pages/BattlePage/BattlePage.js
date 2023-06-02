@@ -31,7 +31,7 @@ export const BattlePage = ({cardImageOne, cardImageTwo}) => {
 
 
   return (
-    <section className="home-page">
+    <section className="battle-page">
       <Title />
       {winner ? (
       <WinnerPage winner={winner} cardImageOne={cardImageOne}  cardImageTwo={cardImageTwo}/>
