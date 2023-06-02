@@ -1,11 +1,14 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import React from "react";
+import {React, useState } from "react";
 import { BattlePage } from "./pages/BattlePage/BattlePage";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { Navigation } from "./components/Navigation/Navigation";
+import backupImage from "./assets/backup-question-mark.png";
 
 function App() {
+  const [cardImageOne, setCardImageOne] = useState(backupImage);
+  const [cardImageTwo, setCardImageTwo] = useState(backupImage);
   return (
     <BrowserRouter>
       <div className="App">
@@ -13,8 +16,15 @@ function App() {
             <Navigation />
           </header>
           <Routes>
-            <Route path="/" element={<HomePage/>} />
-            <Route path="/battle" element={<BattlePage/>} />
+            <Route path="/" element={<HomePage 
+              cardImageOne={cardImageOne} 
+              cardImageTwo={cardImageTwo} 
+              setCardImageOne={setCardImageOne} 
+              setCardImageTwo={setCardImageTwo}/>} />
+
+            <Route path="/battle" element={<BattlePage 
+              cardImageOne={cardImageOne} 
+              cardImageTwo={cardImageTwo}  />} />
           </Routes>
         </div>
       </BrowserRouter>
