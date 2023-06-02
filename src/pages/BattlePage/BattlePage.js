@@ -11,6 +11,7 @@ import backgroundSong from '../../assets/battle-of-the-dragons-8037.mp3'
 export const BattlePage = ({cardImageOne, cardImageTwo}) => {
   const [health1, setHealth1] = useState(100);
   const [winner, setWinner] = useState('');
+  const volume = 0.05;
 
   const playSound = () => {
     const audio = new Audio(punchSound)
@@ -44,7 +45,7 @@ export const BattlePage = ({cardImageOne, cardImageTwo}) => {
     const audio = new Audio(backgroundSong);
     audio.loop = true;
     audio.play();
-
+    audio.volume = volume;
   }, [])
 
 
