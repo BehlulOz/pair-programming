@@ -5,7 +5,7 @@ import { BattlePage } from "./pages/BattlePage/BattlePage";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { Navigation } from "./components/Navigation/Navigation";
 import backupImage from "./assets/backup-question-mark.png";
-import {WinnerPage} from "./pages/WinnerPage/WinnerPage";
+import { WinnerPage } from "./pages/WinnerPage/WinnerPage";
 
 function App() {
   const [cardImageOne, setCardImageOne] = useState(backupImage);
@@ -28,7 +28,6 @@ function App() {
               />
             }
           />
-
           <Route
             path="/battle"
             element={
@@ -38,7 +37,7 @@ function App() {
               />
             }
           />
-          <Route path='/winner' element={<WinnerPage />} />
+          <Route path="/winner" element={<WinnerPage />} />
         </Routes>
       </div>
     </BrowserRouter>
