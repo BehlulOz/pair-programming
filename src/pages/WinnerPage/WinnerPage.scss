@@ -1,0 +1,21 @@
+.winnerpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__title {
+        color: white;
+        font-size: 64px;
+    }
+    &__div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__winner {
+        width: 10%;
+    }
+    &__img {
+        width: 10%;
+    }
+}

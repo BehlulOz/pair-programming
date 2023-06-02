@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import React from "react";
 import { BattlePage } from "./pages/BattlePage/BattlePage";
 import { HomePage } from "./pages/HomePage/HomePage";
+import {WinnerPage} from "./pages/WinnerPage/WinnerPage"
 import { Navigation } from "./components/Navigation/Navigation";
 import { useState } from 'react';
 
@@ -26,6 +27,7 @@ function App() {
             cardImageOne = {cardImageOne}
             cardImageTwo = {cardImageTwo}
             />} />
+            <Route path='/winner' element={<WinnerPage />} />
           </Routes>
         </div>
       </BrowserRouter>
